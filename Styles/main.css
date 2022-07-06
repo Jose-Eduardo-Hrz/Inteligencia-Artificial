@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;500&family=Poppins:wght@100;300&family=Roboto+Slab:wght@100&family=Roboto:wght@100&display=swap');
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--estilo-secundario-pagina);
+}
+
+:root{
+    /*Colores del Puzzle*/
+    --color-primario-puzzle: rgb(167, 69, 23);
+    --color-secundario-puzzle: rgb(190, 120, 87);
+    /*Color del Puzzle Final*/
+    --tabla-final: rgb(32, 122, 67);
+    --celda-final: rgb(110, 165, 130);
+    /*Color de lineas para diagrama de arbol*/
+    --color-lineas: rgb(255, 255, 255);
+    /*Color de Texto para toda la pagina*/
+    --color-texto: rgb(255, 255, 255);
+    /*Estos de texto para toda la pagina*/
+    --estilo-texto-principal: 'Open Sans', sans-serif;
+    --estilo-texto-secundario: 'Roboto Slab', serif;
+    /*Color de Fondo para pagina*/
+    --estilo-primario-pagina: rgb(25, 30, 36);
+    --estilo-secundario-pagina: rgb(33, 38, 48);
+}

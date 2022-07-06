@@ -1,0 +1,80 @@
+.Ejemplos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.TituloProblema{
+    width: 95%;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+    margin: auto;
+}
+
+.contenedor_problemas{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat( auto-fill , minmax( 19rem , 1fr ) );
+    margin-top: 20px;
+    margin: 10px auto 10px auto;
+}
+
+figure{
+    position: relative;
+    width: 290px;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 0.5px solid rgb(114, 114, 114);
+    margin: 0px auto 15px auto;
+}
+
+.Imagen_Problema{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+.capa{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 47, 66, 0.747);
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    text-align: center;
+    visibility: hidden;
+}
+
+figure:hover > a .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+figure:hover > a .capa h3{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+figure .capa h3{
+    color: aliceblue;
+    margin-bottom: 10px;
+    transition: all 500ms ease-in-out;
+    margin-top: 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+figure .capa p{
+    color: aliceblue;
+    font-size: 15px;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+figure:hover > a img{
+    transform: scale(1.2);
+}

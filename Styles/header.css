@@ -1,0 +1,23 @@
+header{
+    background-color: var(--estilo-primario-pagina);
+    border-bottom: 2px solid rgb(133, 133, 133);
+    min-height: 55px;
+    display: flex;
+}
+
+#SeccionLogo{
+    display: flex;
+    align-items: center;
+}
+
+#Logo_Pagina{
+    height: 35px;
+    margin-left: 10px;
+}
+
+.Titulo_Logo{
+    margin: 0px 0px 0px 10px;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-principal);
+    font-size: 25px;
+}

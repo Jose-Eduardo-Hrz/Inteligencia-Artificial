@@ -1,0 +1,69 @@
+footer{
+    border-top: 2px solid rgb(133, 133, 133);
+}
+
+.LogoPlataformas{
+    height: 25px;
+    margin-left: 5px;
+}
+
+#Pie_Pagina_Renglon_1{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--estilo-primario-pagina);
+}
+
+#Pie_Pagina_Renglon_1 > div{
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.Contenedor-Footer{
+    width: 80%;
+    height: 80%;
+    margin: 15px auto auto auto;
+}
+
+.Contenedor-Seccion-Informacion{
+    display: flex;
+    align-items: center;
+}
+
+.Logo_Empresa{
+    height: 30px;
+    margin-left: 30px;
+}
+
+.Parrafos_Footer{
+    margin: 8px auto 0px auto;
+    text-align: justify;
+    font-family: var(--estilo-texto-secundario);
+    color: var(--color-texto);
+}
+
+.Titulos_Footer{
+    margin: 0px;
+    font-size: 25px;
+    font-family: var(--estilo-texto-principal);
+    color: var(--color-texto);
+}
+
+.Titulo_Plataformas{
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: var(--estilo-texto-secundario);
+    color: var(--color-texto);
+}
+
+#Pie_Pagina_Renglon_2{
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.Link_Plataformas{
+    outline: none;
+    text-decoration: none;
+    color: var(--color-texto);
+}

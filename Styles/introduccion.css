@@ -1,0 +1,31 @@
+.Icon_Seccion{
+    height: 45px;
+}
+
+#Introduccion{
+    padding: 5px 20px 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#Introduccion div{
+    display: flex;
+    align-items: center;
+}
+
+.Titulo_Seccion_Titulo{
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-principal);
+    margin-left: 10px;
+}
+
+.Parrafo_Seccion_Titulo{
+    width: 80%;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+    text-align: justify;
+}
+
+.Enlace_IA{
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+}
