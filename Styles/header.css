@@ -1,8 +1,6 @@
 header{
     background-color: var(--estilo-primario-pagina);
     border-bottom: 2px solid rgb(133, 133, 133);
-    min-height: 55px;
-    display: flex;
 }
 
 #SeccionLogo{
@@ -20,4 +18,11 @@ header{
     color: var(--color-texto);
     font-family: var(--estilo-texto-principal);
     font-size: 25px;
+}
+
+#LinkPrincipal{
+    outline: none;
+    text-decoration: none;
+    min-height: 55px;
+    display: flex;
 }
