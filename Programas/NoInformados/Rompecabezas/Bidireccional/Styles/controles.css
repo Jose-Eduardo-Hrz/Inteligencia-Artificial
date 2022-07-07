@@ -1,0 +1,60 @@
+#Controlador{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--estilo-secundario-pagina);
+    border-bottom: 0.5px solid rgb(133, 133, 133);
+}
+
+#Contenedor_Puzzle{
+    flex-basis: 300px;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contenedor_Informacion{
+    display: flex;
+    flex-basis: 250px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.Contenedor_Informacion > h2{
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-principal);
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+}
+
+#Contenedor_Espacio{
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+button{
+    padding: 10px;
+    background-color: var(--color-primario-puzzle);
+    border-radius: 5px;
+    border: none;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-principal);
+    margin: 5px 0px 15px 0px;
+}
+
+button:hover{
+    background-color: var(--color-secundario-puzzle);
+}
+
+#Parrafo_Informacion{
+    width: 100%;
+    font-family: var(--estilo-texto-secundario);
+    color: var(--color-texto);
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}

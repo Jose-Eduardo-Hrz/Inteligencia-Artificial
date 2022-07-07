@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo DFBB</title>
+    <link rel="shortcut icon" href="../../../../Imagenes/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../Styles/header.css">
+    <link rel="stylesheet" href="../../../../Styles/footer.css">
+    <link rel="stylesheet" href="../../../../Styles/scroll.css">
+    <link rel="stylesheet" href="./Styles/main.css">
+    <link rel="stylesheet" href="./Styles/controles.css">
+    <link rel="stylesheet" href="./Styles/puzzleTable.css">
+    <link rel="stylesheet" href="./Styles/diagramaArbol.css">
+    <link rel="stylesheet" href="./Styles/diagramaRuta.css">
+</head>
+
+<body>
+    <!-- Seccion de Encabezado -->
+    <header>
+        <div id="SeccionLogo">
+            <a href="/index.html" id="LinkPrincipal">
+                <img src="../../../../Imagenes/logo.png" alt="" id="Logo_Pagina">
+                <h1 class="Titulo_Logo">Simple Code</h1>
+            </a>
+        </div>
+    </header>
+
+    <!-- Seccion Controles -->
+    <div id="Controlador">
+        <div id="Contenedor_Puzzle">
+            <h2 id="Titulo_Pagina">Algoritmo No Informado Búsqueda en Profundidad Con Ramificación y Poda</h2>
+            <div id="PuzzleTable">
+                <div class="celdaControl" id="celda0">1</div>
+                <div class="celdaControl" id="celda1">2</div>
+                <div class="celdaControl" id="celda2">3</div>
+                <div class="celdaControl" id="celda3">4</div>
+                <div class="celdaControl" id="celda4">5</div>
+                <div class="celdaControl" id="celda5">6</div>
+                <div class="celdaControl" id="celda6">7</div>
+                <div class="celdaControl" id="celda7">8</div>
+                <div class="celdaControl celdaVacio" id="celda8"></div>
+            </div>
+        </div>
+        <div id="Contenedor_Informacion">
+            <label for="NumeroProfundidad" class="label_Contenedor_Informacion">Escribe el número maximo para la profundidad:</label>
+            <input type="text" placeholder="Número de profundidad" id="NumeroProfundidad">
+            <button id="btnIniciarBusqueda">Buscar</button>
+            <p id="Parrafo_Informacion">
+                Número de Ramas: <b id="Numero_Ramas"> 0 ramas </b>
+            </p>
+            <p id="Parrafo_Informacion">
+                Número de Nodos: <b id="Numero_Nodos"> 0 nodos </b>
+            </p>
+            <p id="Parrafo_Informacion">
+                Profundidad: <b id="Numero_Profundidad"> 0 </b>
+            </p>
+        </div>
+        <div id="Contenedor_Espacio"></div>
+    </div>
+
+    <!-- Seccion Diagrama de Arbol -->
+    <div id="TituloDiagramaArbol">
+        <h2>Diagrama de Árbol</h2>
+    </div>
+    <div id="ContenedorDiagramaNodos">
+        <div id="DiagramaNodos">
+            <ul id="nodoPrincipal"> </ul>
+        </div>
+    </div>
+
+    <!-- Seccion Diagrama de Arbol -->
+    <div id="TituloRutaSolucion">
+        <h2>Ruta Para Solución</h2>
+    </div>
+    <div id="ContenedorRuta"></div>
+
+    <!-- Seccion para el pie de pagina -->
+    <footer>
+        <div id="Pie_Pagina_Renglon_1">
+            <div id="Footer_Columna1">
+                <div class="Contenedor-Footer">
+                    <h1 class="Titulos_Footer"> Acerca del Curso </h1>
+                    <p class="Parrafos_Footer">Se pretende Explicar los conceptos básicos y métodos matemáticos de la
+                        inteligencia
+                        artificial aplicables en la solución de problemas complejos en donde la
+                        solución algorítmica exacta o no existe o es costosa su aplicación.
+                    </p>
+                </div>
+            </div>
+            <div id="Footer_Columna2">
+                <div class="Contenedor-Footer">
+                    <h1 class="Titulos_Footer"> Autores </h1>
+                    <p class="Parrafos_Footer">José Eduardo Hernández</p>
+                    <p class="Parrafos_Footer">Maricela Claudia Bravo</p>
+                </div>
+            </div>
+            <div id="Footer_Columna3">
+                <div class="Contenedor-Footer">
+                    <h1 class="Titulos_Footer">Más Información</h1>
+                    <div class="Contenedor-Seccion-Informacion">
+                        <img src="../../../../Imagenes/github.png" alt="" class="LogoPlataformas">
+                        <h2 class="Titulo_Plataformas"> <a href="https://github.com/Jose-Eduardo-Hrz/Inteligencia-Artificial" class="Link_Plataformas">GitHub</a></h2>
+                    </div>
+                    <div class="Contenedor-Seccion-Informacion">
+                        <img src="../../../../Imagenes/gmail.png" alt="" class="LogoPlataformas">
+                        <h2 class="Titulo_Plataformas"> josedelacruz@azc.uam.mx
+                        </h2>
+                    </div>
+                    <div class="Contenedor-Seccion-Informacion">
+                        <img src="../../../../Imagenes/wikipedia.png" alt="" class="LogoPlataformas">
+                        <h2 class="Titulo_Plataformas"> <a href="https://github.com/Jose-Eduardo-Hrz/Inteligencia-Artificial/wiki/Algoritmos-No-Informados#5-b%C3%BAsqueda-en-profundidad-con-ramificaci%C3%B3n-y-poda" class="Link_Plataformas">Wiki</a> </h2>
+                    </div>
+                    <div class="Contenedor-Seccion-Informacion">
+                        <img src="../../../../Imagenes/youtube.png" alt="" class="LogoPlataformas">
+                        <h2 class="Titulo_Plataformas"> <a href="https://www.youtube.com/c/Computaci%C3%B3nyProgramaci%C3%B3n" class="Link_Plataformas">YouTube</a> </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Pie_Pagina_Renglon_2">
+            <img src="../../../../Imagenes/NuevoLogoUAM.png" alt="" class="Logo_Empresa">
+            <img src="../../../../Imagenes/NuevoLogoCBI.png" alt="" class="Logo_Empresa">
+            <h2 class="Titulo_Plataformas">Trimestre 2022 Primeravera</h2>
+        </div>
+    </footer>
+
+</body>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./Scripts/main.js" type="module"></script>
+
+</html>

@@ -6,6 +6,7 @@ header{
 #SeccionLogo{
     display: flex;
     align-items: center;
+    min-height: 55px;
 }
 
 #Logo_Pagina{
@@ -23,6 +24,5 @@ header{
 #LinkPrincipal{
     outline: none;
     text-decoration: none;
-    min-height: 55px;
     display: flex;
 }

@@ -1,0 +1,64 @@
+#TituloRutaSolucion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+}
+
+#TituloRutaSolucion > h2{
+    margin: 0px;
+}
+
+#ContenedorRuta{
+    min-height: 200px;
+    max-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe;
+    overflow: auto;
+}
+
+/*Tamaño del Espacio horizontal*/
+#ContenedorRuta::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*Fondo del Scrollbar*/
+#ContenedorRuta::-webkit-scrollbar-track {
+    background: rgb(106, 118, 134);
+    /* color of the tracking area */
+}
+
+/*Scollbar*/
+#ContenedorRuta::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 38, 53);
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 0.5px solid rgb(62, 69, 83);
+}
+
+.celdaCambio{
+    display: flex;
+    margin: 3px 3px 5px 0px;
+}
+
+.seccionNumeroCambio{
+    margin: 5px;
+    background-color: var(--tabla-final);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-texto);
+    border-radius: 100%;
+    font-size: 12px;
+    font-family: var(--estilo-texto-principal);
+}
+
+.TablaCamino{
+    margin: 5px;
+}

@@ -1,0 +1,35 @@
+#PuzzleTable{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 150px; 
+    height: 150px; 
+    margin: 10px 0px 15px 0px;
+    border: 5px solid var(--color-primario-puzzle);
+    border-radius: 10px;
+    background-color: var(--color-texto);
+}
+
+.celdaControl{
+    width: 90%;
+    height: 90%;
+    background-color: var(--color-primario-puzzle);
+    margin: auto;
+    border-radius: 3px;
+    color: var(--color-texto);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.celdaVacio{
+    background: none;
+}
+
+#Titulo_Pagina{
+    width: 300px;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+    text-align: center;
+    margin: 0px;
+}

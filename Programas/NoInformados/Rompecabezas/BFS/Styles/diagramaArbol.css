@@ -1,0 +1,182 @@
+:root {
+    --color-scroll: rgb(89, 92, 99);
+}
+
+#TituloDiagramaArbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+}
+
+#TituloDiagramaArbol>h2 {
+    margin: 0px;
+}
+
+#ContenedorDiagramaNodos {
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    overflow: auto;
+    border-bottom: 0.5px solid rgb(133, 133, 133);
+}
+
+/*Tamaño del Espacio horizontal*/
+#ContenedorDiagramaNodos::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*Fondo del Scrollbar*/
+#ContenedorDiagramaNodos::-webkit-scrollbar-track {
+    background: rgb(106, 118, 134);
+    /* color of the tracking area */
+}
+
+/*Scollbar*/
+#ContenedorDiagramaNodos::-webkit-scrollbar-thumb {
+    background-color: rgb(31, 38, 53);
+    /* color of the scroll thumb */
+    border-radius: 10px;
+    /* roundness of the scroll thumb */
+    border: 0.5px solid rgb(62, 69, 83);
+}
+
+#DiagramaNodos {
+    width: max-content;
+    height: max-content;
+    margin: 0px;
+    padding: 0px;
+}
+
+#DiagramaNodos ul {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 15px;
+    position: relative;
+}
+
+#DiagramaNodos li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    padding: 15px 5px 0px 5px;
+    position: relative;
+}
+
+#DiagramaNodos li::before,
+#DiagramaNodos li::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    border-top: 1px solid var(--color-lineas);
+    width: 50%;
+    height: 15px;
+}
+
+#DiagramaNodos li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid var(--color-lineas);
+    ;
+}
+
+#DiagramaNodos li:only-child::before,
+#DiagramaNodos li:only-child::after {
+    display: none;
+}
+
+#DiagramaNodos li:only-child {
+    padding-top: 0;
+}
+
+#DiagramaNodos li:first-child::before,
+#DiagramaNodos li:last-child::after {
+    border: 0 none;
+}
+
+#DiagramaNodos li:last-child::before {
+    border-right: 1px solid var(--color-lineas);
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+#DiagramaNodos li:first-child::after {
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+#DiagramaNodos ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid var(--color-lineas);
+    width: 0;
+    height: 15px;
+}
+
+#DiagramaNodos li .nodo {
+    border: 1px solid var(--color-lineas);
+    padding: 2px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.TablaOpcion {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color-primario-puzzle);
+}
+
+.celda {
+    margin: auto;
+    width: 85%;
+    height: 85%;
+    background-color: var(--color-secundario-puzzle);
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+    border-radius: 2px;
+}
+
+.vacio {
+    background: none;
+}
+
+.TablaOpcionFinal {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--tabla-final);
+}
+
+.celdaFinal {
+    margin: auto;
+    width: 85%;
+    height: 85%;
+    background-color: var(--celda-final);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-texto);
+    font-family: var(--estilo-texto-secundario);
+}
