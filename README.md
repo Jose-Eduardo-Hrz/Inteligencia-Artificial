@@ -17,23 +17,19 @@ su aplicación.
 
 ## Requerimientos
 
-1. Tener conocimiento de un lenguaje de programación:
-
-- Java
-- Python
-- JavaScript
-- C++
-
-2. Tener conocimiento sobre Estructuras de Datos:
-
-- Arreglos
-- Vectores
-- Tablas de Dispersión
-- Pilas
-- Filas
-- Árboles
-
-3. Conocimiento sobre algoritmos de ordenamiento
++ Tener conocimiento de un lenguaje de programación:
+    + Java
+    + Python
+    + JavaScript
+    + C++
++ Tener conocimiento sobre Estructuras de Datos:
+    + Arreglos
+    + Vectores
+    + Tablas de Dispersión
+    + Pilas
+    + Filas
+    + Árboles
++ Conocimiento sobre algoritmos de ordenamiento
 
 ## Recursos
 
@@ -45,7 +41,3 @@ su aplicación.
 
 - José Eduardo Hernández
 - Maricela Claudia Bravo
-
-$$E=mc^2$$
-
-<u style="font-size:30px;">$$ A_2 $$</u>
