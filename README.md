@@ -37,7 +37,7 @@ su aplicación.
 
 ## Recursos
 
-- (YouTube)[https://www.youtube.com/c/Computaci%C3%B3nyProgramaci%C3%B3n]
+- [YouTube](https://www.youtube.com/c/Computaci%C3%B3nyProgramaci%C3%B3n)
 - (Ejemplos)[https://jose-eduardo-hrz.github.io/Inteligencia-Artificial/]
 - (Wiki)[https://github.com/Jose-Eduardo-Hrz/Inteligencia-Artificial/wiki]
 
