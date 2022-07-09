@@ -48,4 +48,4 @@ su aplicación.
 
 $$E=mc^2$$
 
-$$ A_2 $$
+<u style="font-size:30px;">$$ A_2 $$</u>
