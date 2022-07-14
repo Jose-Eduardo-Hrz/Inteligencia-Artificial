@@ -1,0 +1,17 @@
+{
+  "name": "javascript-bfs",
+  "version": "1.0.0",
+  "description": "Problema del Rompecabezas de 8 piezas implementando el algorimo BFS",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "Jose Eduardo Hernández,Maricela Claudia Bravo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jose-Eduardo-Hrz/Inteligencia-Artificial"
+  }
+}
